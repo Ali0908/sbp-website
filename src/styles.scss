@@ -1599,15 +1599,14 @@
 			}
 
 			.image {
-				border-radius: 100%;
+				border-radius: 17%;
 				display: inline-block;
-				height: 18em;
+				height: fit-content;
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 18em;
+				width: 10em;
 
 				img {
-					border-radius: 100%;
 					display: block;
 					width: 100%;
 				}
