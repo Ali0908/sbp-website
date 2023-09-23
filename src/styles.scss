@@ -181,8 +181,11 @@
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 		a {
-			color: inherit;
+			color: #fff;
 			border: 0;
+			text-decoration:none;
+			font-size: 0.5em;
+    		font-weight: bold;
 		}
 	}
 
@@ -1497,11 +1500,12 @@
 
 					a, span {
 						border: 0;
-						color: inherit;
+						color: #fff;
 						display: inline-block;
 						height: inherit;
 						line-height: inherit;
 						outline: 0;
+						text-decoration:none;
 
 						&.button {
 							height: 2em;
@@ -1545,7 +1549,7 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: _palette(accent2);
-		background-image: url('assets/images/banner.jpg');
+		background-image: url('assets/images/rm222batch2-mind-03.jpg');
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
@@ -1586,15 +1590,19 @@
 			header {
 				display: inline-block;
 				vertical-align: middle;
+				width: 80%;
 
 				h2 {
 					font-size: 2.5em;
 					margin: 0;
+					color: #0bc1d8;
 				}
 
 				p {
 					margin: (_size(element-margin) * 0.25) 0 0 0;
 					top: 0;
+					color: #0bc1d8;
+					font-size: 1.5em;
 				}
 			}
 
@@ -2163,3 +2171,5 @@
 			}
 
 	}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
