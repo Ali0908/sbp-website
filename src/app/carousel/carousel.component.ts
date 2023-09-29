@@ -1,25 +1,38 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { NgFor } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+selector: 'app-carousel',
+templateUrl: './carousel.component.html',
+styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent {
-  images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
+images = [ 
+	'../assets/caroussel/installation_vmc_caroussel.jpg',
+	'../assets/caroussel/isolation_thermique_caroussel.jpg',
+	'../assets/caroussel/ravalement_caroussel.jpg',
+	'../assets/caroussel/travaux_electricite_caroussel.jpg',
+];
 
-	paused = false;
-	unpauseOnArrow = false;
-	pauseOnIndicator = false;
-	pauseOnHover = true;
-	pauseOnFocus = true;
+	paused: boolean = false;
+	unpauseOnArrow: boolean = false;
+	pauseOnIndicator: boolean = false;
+	pauseOnHover: boolean = true;
+	pauseOnFocus: boolean = true;
 
-	@ViewChild('carousel', { static: true }) carousel: NgbCarousel;
+	@ViewChild('carousel', { static: true }) carousel: NgbCarousel | undefined;
+	constructor() {}
+
+	ngAfterViewInit() {
+	  // Check if carousel is defined before accessing it
+	if (this.carousel) {
+		this.carousel.cycle();
+	}
+	}
 
 	togglePaused() {
+		if (this.carousel) {
 		if (this.paused) {
 			this.carousel.cycle();
 		} else {
@@ -27,6 +40,7 @@ export class CarouselComponent {
 		}
 		this.paused = !this.paused;
 	}
+}
 
 	onSlide(slideEvent: NgbSlideEvent) {
 		if (
