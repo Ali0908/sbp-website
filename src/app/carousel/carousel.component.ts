@@ -1,7 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { NgFor } from '@angular/common';
-
+import { commonCst} from '../../../src/assets/constant/commonCst';
 @Component({
 selector: 'app-carousel',
 templateUrl: './carousel.component.html',
@@ -14,6 +14,15 @@ images = [
 	'../assets/caroussel/ravalement_caroussel.jpg',
 	'../assets/caroussel/travaux_electricite_caroussel.jpg',
 ];
+
+messages = [
+	'Qui culpa nisi id sit id ullamco fugiat eu et. Pariatur nostrud in est elit mollit aliqua exercitation exercitation enim. Aute minim nostrud voluptate consequat aute. Sint labore laboris commodo non reprehenderit est eu.',
+	'Minim enim fugiat in culpa est laborum ea amet eiusmod duis culpa Lorem. Et sunt eiusmod pariatur commodo incididunt occaecat adipisicing ex cupidatat non esse quis amet proident. Ad adipisicing culpa dolor voluptate in dolor occaecat. Duis Lorem consequat exercitation aliquip. Cillum Lorem ea qui veniam non fugiat quis aliqua minim.',
+	'Incididunt ut dolore excepteur velit dolore fugiat aliquip Lorem exercitation laborum eiusmod. Ullamco aliquip in ea culpa anim pariatur in dolor esse incididunt do id. Quis consectetur ullamco enim deserunt elit in.',
+	'Minim aliqua proident aute ullamco ullamco magna. Adipisicing ut esse nisi qui et consequat. Voluptate eiusmod elit veniam ea consectetur nisi ea sint magna dolore excepteur elit anim velit. Eiusmod voluptate nostrud est eu et eu non Lorem exercitation eu. Ullamco non mollit eu qui et officia anim pariatur ut nulla laborum cupidatat. In esse voluptate est ea dolor ullamco minim duis aliqua exercitation est.',
+]
+
+protected commonCst = commonCst
 
 	paused: boolean = false;
 	unpauseOnArrow: boolean = false;

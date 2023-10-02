@@ -2,16 +2,17 @@
 
 <ngb-carousel
 	#carousel
-	[interval]="1000"
+	[interval]="3000"
 	[pauseOnHover]="pauseOnHover"
 	[pauseOnFocus]="pauseOnFocus"
 	(slide)="onSlide($event)"
 >
 	<ng-template ngbSlide *ngFor="let img of images; index as i">
 		<div class="carousel-caption">
-			<h3>My slide {{i + 1}} title</h3>
+			<h3>{{commonCst.lexicon[img]}}</h3>
+			<p>{{ messages[i] }}</p>
 		</div>
-		<img [src]="img" alt="My image {{ i + 1 }} description" />
+		<img [src]="img" alt="My image {{ i + 1 }} description" class="carrousselImg" />
 	</ng-template>
 </ngb-carousel>
 
