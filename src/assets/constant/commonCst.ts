@@ -1,5 +1,5 @@
-export  const commonCst = {
-    'lexicon':{
+ export const commonCst = {
+    services: {
         'thermalInsulation': 'Isolation thermique',
         'restoration': 'Ravalement',
         'electricalWork': "Travaux d'électricité",

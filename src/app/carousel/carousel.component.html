@@ -7,12 +7,13 @@
 	[pauseOnFocus]="pauseOnFocus"
 	(slide)="onSlide($event)"
 >
-	<ng-template ngbSlide *ngFor="let img of images; index as i">
+	<ng-template ngbSlide *ngFor="let item of items; index as i">
 		<div class="carousel-caption">
-			<h3>{{commonCst.lexicon[img]}}</h3>
-			<p>{{ messages[i] }}</p>
+			<h3>{{item.title}}</h3>
+			<p>{{ item.messages}}</p>
+			<button mat-raised-button color="primary">Voir Plus</button>
 		</div>
-		<img [src]="img" alt="My image {{ i + 1 }} description" class="carrousselImg" />
+		<img [src]="item.image" alt="My image {{ i + 1 }} description" class="carrousselImg" />
 	</ng-template>
 </ngb-carousel>
 
