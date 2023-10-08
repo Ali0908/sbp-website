@@ -28,12 +28,12 @@ export class CarouselComponent {
 		messages:'Minim aliqua proident aute ullamco ullamco magna. Adipisicing ut esse nisi qui et consequat. Voluptate eiusmod elit veniam ea consectetur nisi ea sint magna dolore excepteur elit anim velit. Eiusmod voluptate nostrud est eu et eu non Lorem exercitation eu. Ullamco non mollit eu qui et officia anim pariatur ut nulla laborum cupidatat. In esse voluptate est ea dolor ullamco minim duis aliqua exercitation est.',
 	},
 	];
-images = [ 
-	'../assets/caroussel/installation_vmc_caroussel.jpg',
-	'../assets/caroussel/isolation_thermique_caroussel.jpg',
-	'../assets/caroussel/ravalement_caroussel.jpg',
-	'../assets/caroussel/travaux_electricite_caroussel.jpg',
-];
+// images = [ 
+// 	'../assets/caroussel/installation_vmc_caroussel.jpg',
+// 	'../assets/caroussel/isolation_thermique_caroussel.jpg',
+// 	'../assets/caroussel/ravalement_caroussel.jpg',
+// 	'../assets/caroussel/travaux_electricite_caroussel.jpg',
+// ];
 
 // messages = [
 // 	'Qui culpa nisi id sit id ullamco fugiat eu et. Pariatur nostrud in est elit mollit aliqua exercitation exercitation enim. Aute minim nostrud voluptate consequat aute. Sint labore laboris commodo non reprehenderit est eu.',

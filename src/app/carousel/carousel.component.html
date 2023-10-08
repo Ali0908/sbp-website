@@ -11,7 +11,7 @@
 		<div class="carousel-caption">
 			<h3>{{item.title}}</h3>
 			<p>{{ item.messages}}</p>
-			<button mat-raised-button color="primary">Voir Plus</button>
+			<button class="learnMoreBtn">Voir Plus</button>
 		</div>
 		<img [src]="item.image" alt="My image {{ i + 1 }} description" class="carrousselImg" />
 	</ng-template>
@@ -35,6 +35,6 @@
 	<input type="checkbox" class="form-check-input" id="pauseOnIndicator" [(ngModel)]="pauseOnIndicator" />
 	<label class="form-check-label" for="pauseOnIndicator">Pause when clicking on navigation indicator</label>
 </div>
-<button type="button" (click)="togglePaused()" class="btn btn-outline-dark btn-sm">
+<!-- <button type="button" (click)="togglePaused()" class="btn btn-outline-dark btn-sm">
 	{{paused ? 'Cycle' : 'Pause' }}
-</button>
+</button> -->
