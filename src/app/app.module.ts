@@ -7,18 +7,23 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { FaqComponent } from './faq/faq.component';
+import { MatTreeModule} from '@angular/material/tree';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    CarouselComponent
+    CarouselComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
     NgbModule, 
     FormsModule,
     MatButtonModule,
+    MatTreeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
