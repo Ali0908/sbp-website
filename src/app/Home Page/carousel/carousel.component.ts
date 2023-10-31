@@ -1,7 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { NgFor } from '@angular/common';
-import { commonCst} from '../../../src/assets/constant/commonCst';
+import { commonCst} from '../../../assets/constant/commonCst';
 @Component({
 selector: 'app-carousel',
 templateUrl: './carousel.component.html',
