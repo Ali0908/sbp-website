@@ -1,0 +1,5 @@
+.dashboard-button{
+    display: flex;
+    justify-content: space-around;
+    width: 56%;
+}
