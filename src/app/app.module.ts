@@ -13,15 +13,17 @@ import { ContactComponent } from './Home Page/contact/contact.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {ErrorStateMatcher} from '@angular/material/core';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DashboardComponent,
-    CarouselComponent,
     FaqComponent,
     ContactComponent,
+    CarouselComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,8 @@ import {ErrorStateMatcher} from '@angular/material/core';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    RouterModule,
+    AppRoutingModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
