@@ -1,14 +1,8 @@
-<h1 class="text-center">Frequently Asked Questions</h1>
-<div class="accordion" id="accordionExample" *ngFor=" let item of faqItems ; let i = index">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button  class="accordion-button" type="button" (click)="toggleAnswer(i)">
-        {{item.question}}
-      </button>
-    </h2>
-    <div id="collapse{{i}}" class="accordion-collapse collapse" [class.show]="i === 0" [attr.aria-labelledby]="'heading' + i"> data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        {{item.answer}}
-      </div>
-    </div>
-  </div>
+<div class="faq-container">
+<h2 class="faq-title">FAQ</h2>
+<details *ngFor="let item of faqItems">
+  <summary class="faq-question">{{item.question}}</summary>
+  {{item.answer}}
+</details>
+<button type="button" class="btn btn-primary">Contactez nous</button>
+</div>
