@@ -4,12 +4,12 @@ import { ContactComponent } from './Home Page/contact/contact.component';
 
 const routeConfig: Routes = [
     {
-      path: '/',
+      path: '',
       component: DashboardComponent,
       title: 'Home page'
     },
     {
-      path: 'contact/',
+      path: 'contact',
       component: ContactComponent,
       title: 'Contact'
     }
